@@ -4,10 +4,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regiões do Brasil!</title>
-    <link rel="shortcut icon" href="{% static 'images/favicon-regiao.png' %}" />
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+    <link rel="icon" href="{% static 'images/favicon-regiao.png' %}">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 
     <body>
       <nav>
@@ -25,15 +25,14 @@
               <label for="showDrop" class="mobile-item">Dropdown Menu</label>
               <ul class="drop-menu">
                 <li>
-                    <a href="{% include 'Regioes/norte.html' %}">Norte</a>
+                  <a href="{% url 'norte' %}">Norte</a>
                 </li>
                 <li>
-                  <a href="{% include 'Regioes/nordeste.html' %}">Nordeste</a>
+                
+                  <a href="{% url 'nordeste' %}">Nordeste</a>
+                  
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="#">Feedback</a>
             </li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
@@ -41,8 +40,9 @@
       </nav>
 
       <div class="body-text">
-        <div class="title">Responsive Dropdown and Mega Menu</div>
-        <div class="sub-title">using only HTML & CSS</div>
+        <div class="title">Passe o mouse pelo Drop Down Menu</div>
+        <div class="sub-title">para conferir as Regiões!</div>
+        <p class="p-index">feito por: Jesse de Lima e Lara Cordeiro</p>
       </div>
     </body>
   </head>

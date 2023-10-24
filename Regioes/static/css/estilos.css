@@ -317,7 +317,35 @@ nav input {
   padding: 0 30px;
 }
 
-.body-text div {
-  font-size: 45px;
+.body-text-regioes {
+  font-size: 37px;
   font-weight: 600;
+}
+
+.body-text div {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 13px;
+}
+
+h1 {
+  padding-top: 60px;
+  font-size: 47px;
+}
+
+.p-index {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+img {
+  height: 300px;
+  padding: 13px;
 }

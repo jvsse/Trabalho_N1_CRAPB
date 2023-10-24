@@ -6,8 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regiões do Brasil!</title>
-    <link rel="shortcut icon" href="{% static 'images/favicon-regiao.png' %}" />
+    <link rel="icon" href="{% static 'images/favicon-nordeste.png' %}" />
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+
     <body>
       <nav>
         <div class="wrapper">
@@ -24,24 +25,66 @@
               <label for="showDrop" class="mobile-item">Dropdown Menu</label>
               <ul class="drop-menu">
                 <li>
-                    <a href="{% include 'Regioes/norte.html' %}">Norte</a>
+                  <a href="{% url 'norte' %}">Norte</a>
                 </li>
                 <li>
-                  <a href="{% include 'Regioes/nordeste.html' %}">Nordeste</a>
+                  <a href="{% url 'nordeste' %}">Nordeste</a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="#">Feedback</a>
             </li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
       </nav>
 
-      <div class="body-text">
-        <div class="title">Responsive Dropdown and Mega Menu</div>
-        <div class="sub-title">using only HTML & CSS</div>
+      <div class="body-text-regioes">
+        <h1>Região Nordeste</h1>
+        <hr />
+        <div class="sub-title-content">1. Ceará</div>
+        <p>
+          O Ceará é uma das 27 unidades federativas do Brasil. Está situado no norte da Região Nordeste e tem por limites o Oceano Atlântico a norte e nordeste, Rio Grande do Norte e Paraíba a leste, Pernambuco ao sul e Piauí a oeste. Sua área total é de 148 894,442 km², ou 9,37% da área do Nordeste e 1,74% da superfície do Brasil. A população estimada do estado para 1.° de julho de 2021 era de 9 240 580 habitantes, segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), sendo o oitavo estado mais populoso do país.
+
+          A capital e município mais populoso é Fortaleza, sede da Região Metropolitana de Fortaleza. Outras cidades importantes fora da Região Metropolitana de Fortaleza são: Juazeiro do Norte e Crato, na Região Metropolitana do Cariri; Sobral, sede da Região Metropolitana de Sobral; Itapipoca, na região norte; Iguatu, na região centro-sul; Aracati, na região do Vale do Jaguaribe; e Quixadá, Iguatu e Crateús na região dos Sertões Cearenses. Na Região Metropolitana de Fortaleza, cidades importantes como Caucaia, Horizonte, Maranguape e Maracanaú, sede do Complexo Industrial e Portuário do Pecém, incrementam o Produto Interno Bruto cearense. O estado possui ao todo 184 municípios.
+
+          O estado é conhecido nacionalmente pela beleza de seu litoral, pela religiosidade popular e pela fama de ser grande berço de talentos do humor. A jangada, ainda comum ao longo da costa, é considerada um dos maiores símbolos do povo e da cultura cearenses. O Ceará concentra 55% de toda caatinga do Brasil e é o único estado do Nordeste-Sudeste a estar completamente inserido na sub-região do sertão. Décimo primeiro estado mais rico do país e o terceiro do Nordeste, o Ceará apresentava, em 2010, a melhor qualidade de vida do Norte-Nordeste, segundo a FIRJAN, além do segundo melhor Índice de Desenvolvimento Humano da região. O Ceará abriga um dos maiores parques aquáticos da América Latina, o Beach Park, na praia do Porto das Dunas, que recebe cerca de 1,3 milhão de visitantes por ano, e o quarto maior estádio de futebol do Brasil, o Estádio Governador Plácido Castelo (Castelão), que tem capacidade para mais de 64 000 torcedores.
+          <br /><br />
+          Terra de escritores como José de Alencar, Rachel de Queiroz, Patativa do Assaré, Juvenal Galeno, de Dom Hélder Câmara, Clóvis Beviláqua, Castelo Branco e de Padre Cícero, o "cearense do século". O Ceará também revelou Chico Anysio, Renato Aragão e Tom Cavalcante, considerados os maiores humoristas do país; atores e cineastas famosos como José Wilker, Gero Camilo, Luiza Tomé e Karim Aïnouz; além de nomes de destaque das ciências exatas, como Casimiro Montenegro Filho, Fernando de Mendonça, Maurício Peixoto, Cláudio Lenz Cesar, dentre muitos. O Ceará também é conhecido como "Terra da Luz", numa referência à grande quantidade de dias ensolarados, mas que, principalmente, remonta ao fato de o estado ter sido o primeiro da federação a abolir a escravidão, em 1884, quatro anos antes da Lei Áurea. Por esse fato, o jornalista José do Patrocínio cunhou o título de "a terra da luz" ao Ceará.
+
+          A delimitação do atual território ocupado pelo estado do Ceará começou com a doação da Capitania Siará em 1535 para Antônio Cardoso de Barros.
+
+          A fundação, contudo, ocorreu em 1603, por Pêro Coelho de Souza, que chamou a colônia de Nova Luzitânia.
+
+          Entre os integrantes do grupo de colonizadores estava Martim Soares Moreno, com 17 anos na época. É atribuída a ele a fundação da região. Habilidoso, o rapaz negociava com indígenas, de quem conhecia os costumes e a língua.
+
+          Essa característica auxiliou no combate aos franceses e holandeses que invadiram a região. Soares Moreno chegou ao posto de senhor da Capitania do Ceará em 1619, após sucessivas disputas de terra com os invasores.
+
+          A região foi alvo de investidas de holandeses também em 1637 e 1649. O Ceará conquistou a autonomia somente em 1799. Integrou a Confederação do Equador.
+
+          O desenvolvimento do estado foi impulsionado pelo investimento da navegação a vapor, a instalação de estradas de ferro e a iluminação a gás.
+
+          O Estado do Ceará foi o primeiro a libertar os escravos negros em 1884.
+        </p>
+        <img src="{% static 'images/ceará.jpg' %}" />
+        <hr />
+        <div class="sub-title-content">2. Bahia</div>
+        <p>
+          A Bahia (pronúncia em português: [baˈi.ɐ]) é uma das 27 unidades federativas do Brasil. Banhada pelo Oceano Atlântico na costa mais extensa do país, está situada na Região Nordeste, onde representa a maior extensão territorial, a maior população, o maior produto interno bruto e o maior número de municípios. A capital estadual é Salvador. Além dela, há outros municípios influentes na rede urbana baiana, como as capitais regionais Feira de Santana, Vitória da Conquista, Barreiras, o bipolo Itabuna-Ilhéus e Juazeiro do bipolo com o município pernambucano de Petrolina.
+
+          Um dos primeiros núcleos de riqueza açucareira do Brasil, a Bahia recebeu um imenso contingente e enorme influência de africanos escravizados, trazidos pelos colonizadores europeus para comercialização, visando a suprir os engenhos e as minas de ouro da colônia. Esses indivíduos escravizados procediam em especial do Golfo da Guiné, das antigamente chamadas costas "dos escravos", "da pimenta", "do marfim" e "do ouro", no Oeste Africano, com destaque para o Império de Oió, fundado e habitado pelo povo iorubá, e o antigo Reino de Daomé. Em contraposição, o Rio de Janeiro viria a receber, posteriormente, escravos procedentes principalmente de Angola e Moçambique. Assim, a influência da cultura africana na Bahia permaneceu alta na música, na culinária, na religião, no modo de vida de sua população, não só ao redor de Salvador e Recôncavo baiano, mas, principalmente, em toda a costa baiana. Não à toa, o gentílico do estado deu nome ao ofício comum a mulheres negras que preparam e comerciam no tabuleiro de acarajé, vestidas de turbante, colares e brincos dourados, pulseira, saias compridas e armadas, blusa de renda e adereços de pano da costa — isto é, a baiana do acarajé.
+          <br /><br />
+          A Bahia é considerada a parte mais antiga da América Portuguesa, pois foi na região de Porto Seguro, litoral sul da Bahia, que a frota de Pedro Álvares Cabral ancorou, em 22 de abril de 1500, marcando o descobrimento do Brasil pelos portugueses e a celebração da primeira missa, na praia da Coroa Vermelha, presidida pelo frei Henrique Soares de Coimbra. Em 1 de novembro de 1501, o navegador florentino Américo Vespúcio, a serviço da Coroa portuguesa, descobriu e batizou a Baía de Todos-os-Santos, maior reentrância de mar no litoral desde a foz do Rio Amazonas até o estuário do Rio da Prata. O local foi escolhido para abrigar a sede do governo-geral em março de 1549 com a chegada do fidalgo Tomé de Sousa, a mando do rei Dom João III de Portugal para fundar a que seria, pelos 214 anos seguintes, a cidade capital do Brasil Colônia, Salvador. É de se destacar também o decreto de abertura dos portos às nações amigas, promulgada em 28 de janeiro de 1808 por meio de uma Carta Régia pelo príncipe regente dom João VI de Portugal, na então Capitania da Bahia, acabando com o exclusivismo metropolitano comercial e abrindo a economia brasileira para o comércio exterior.
+
+          O estado possui um alto potencial turístico, que vem sendo muito explorado através de seu litoral, da Chapada Diamantina, do Recôncavo e de outras belezas naturais e patrimônios históricos e culturais. Possui a sétima maior economia do Brasil, com produto interno bruto superior a 290 bilhões de reais, representando quase 20 mil reais de PIB per capita. A sua renda, no entanto, não é bem distribuída, se refletindo num índice de desenvolvimento humano de 0,714 em 2017.[20] Na Bandeira do Brasil, o estado da Bahia é representado pela estrela Gamma Crucis da constelação do Cruzeiro do Sul (Crux).
+        </p>
+        <img src="{% static 'images/bahia.jpg' %}" />
+        <hr />
+        <div class="sub-title-content">3. Pernambuco</div>
+        <p>Pernambuco é uma das 27 unidades federativas do Brasil. Banhado a leste pelo Oceano Atlântico, está localizado no centro-leste da região Nordeste e faz divisa com cinco estados da região, sendo eles Paraíba (N), Ceará (NO), Alagoas (SE), Bahia (S) e Piauí (O). Com 98 067,881 km² de área (1,152% do território nacional), também fazem parte do seu território os arquipélagos de Fernando de Noronha e de São Pedro e São Paulo. Pernambuco é a sétima unidade federativa mais populosa do Brasil, e possui o décimo maior PIB do país e o maior PIB per capita entre os estados do Nordeste. Já sua capital, Recife, é sede da concentração urbana mais rica e populosa do Norte-Nordeste. No interior do estado, os municípios mais populosos são Petrolina, Caruaru, Garanhuns e Vitória de Santo Antão. Sua capital é o Recife e a sede administrativa é o Palácio do Campo das Princesas. A atual governadora é Raquel Lyra (PSDB).
+
+          Pernambuco foi o primeiro núcleo econômico do Brasil, uma vez que se destacou na exploração do pau-brasil (também referido como pau-de-pernambuco) e foi a primeira parte do país onde a cultura canavieira desenvolveu-se efetivamente. A Capitania de Pernambuco, a mais rica das capitanias da América portuguesa durante o ciclo do açúcar, chegou a atingir o posto de maior produtor mundial da mercadoria. No estado ocorreram muitos dos primeiros fatos históricos do Novo Mundo: na Ilha de Itamaracá estabeleceu-se, em 1516, o primeiro "Governador das Partes do Brasil", Pero Capico, que ali construiu o primeiro engenho de açúcar de que se tem notícia na América portuguesa. Pernambuco teve ainda participação ativa em diversos episódios da história brasileira: foi palco das Batalhas dos Guararapes, combates decisivos na Insurreição Pernambucana e considerados a origem do Exército Brasileiro; e serviu de berço a movimentos de caráter nativista ou de ideais libertários, como a Guerra dos Mascates, a Revolução Pernambucana, a Confederação do Equador e a Revolução Praieira.
+          
+          Conhecido por sua ativa e rica cultura popular, Pernambuco é berço de várias manifestações tradicionais, como a capoeira, o coco, o frevo e o maracatu, bem como detentor de um vasto patrimônio histórico, artístico e arquitetônico, sobretudo no que se refere ao período colonial. Em 1970 surgiu no estado o Movimento Armorial, que teve como figura central o escritor Ariano Suassuna. Duas décadas mais tarde apareceu outro importante movimento que se constituiu numa espécie de contraponto ao Armorial: o Manguebeat, cujo maior expoente foi o artista Chico Science.</p>
+          <img src="{% static 'images/pernambuco.jpg' %}" />
       </div>
     </body>
   </head>

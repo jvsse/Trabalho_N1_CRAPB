@@ -6,8 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regiões do Brasil!</title>
-    <link rel="shortcut icon" href="{% static 'images/favicon-regiao.png' %}" />
+    <link rel="icon" href="{% static 'images/favicon-norte.png' %}" />
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+
     <body>
       <nav>
         <div class="wrapper">
@@ -24,24 +25,40 @@
               <label for="showDrop" class="mobile-item">Dropdown Menu</label>
               <ul class="drop-menu">
                 <li>
-                    <a href="{% include 'Regioes/norte.html' %}">Norte</a>
+                  <a href="{% url 'norte' %}">Norte</a>
                 </li>
                 <li>
-                  <a href="{% include 'Regioes/nordeste.html' %}">Nordeste</a>
+                  <a href="{% url 'nordeste' %}">Nordeste</a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="#">Feedback</a>
             </li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
       </nav>
 
-      <div class="body-text">
-        <div class="title">Responsive Dropdown and Mega Menu</div>
-        <div class="sub-title">using only HTML & CSS</div>
+      <div class="body-text-regioes">
+        <h1>Região Norte</h1>
+        <hr />
+        <div class="sub-title-content">1. Roraima</div>
+        <p>Roraima (pronúncia em português: [ʁoˈɾajmɐ] link=. ouça) é uma das 27 unidades federativas do Brasil. Está situado na Região Norte do país, sendo o estado mais setentrional (ao norte) da federação. Tem por limites a Venezuela, ao norte e noroeste; Guiana, ao leste; Pará, ao sudeste; e Amazonas, ao sul e oeste. Ocupa uma área aproximada de 224 300,506 km², pouco maior que a Bielorrússia, sendo o décimo quarto maior estado brasileiro. Em Boa Vista, única capital brasileira totalmente no Hemisfério Norte, encontra-se a sede do governo estadual, atualmente presidido por Antonio Denarium.
+
+          A história roraimense está fortemente ligada ao Rio Branco. Foi através deste rio que chegaram os primeiros colonizadores portugueses. O Vale do rio Branco sempre foi cobiçado por ingleses e neerlandeses, que adentraram no Brasil através do Planalto das Guianas em busca de indígenas para serem escravizados. Pelo território da Venezuela, os espanhóis também chegaram a invadir a parte norte do rio Branco e no rio Uraricoera. Os portugueses derrotaram e expulsaram todos os invasores e estabeleceram a soberania de Portugal sobre a região de Roraima e de parte do Amazonas.
+
+          O estado é o menos populoso do país, com uma população de 652 713 habitantes, segundo estimativas de 2021 do Instituto Brasileiro de Geografia e Estatística (IBGE). É, também, o que apresenta a menor densidade demográfica na federação, com 2,33 hab/km². Sua economia, baseada principalmente no setor terciário, registra uma alta taxa de crescimento, embora seu Produto interno bruto (PIB) seja o menor do país, com seus R$ 14,252 bilhões, representando 0,15% da economia brasileira.
+
+          Situado numa região periférica da Amazônia Legal, no noroeste da Região Norte do Brasil, predomina em Roraima a floresta amazônica, havendo ainda uma enorme faixa de savana no centro-leste. Encravado no Planalto das Guianas, uma parte ao sul pertence à Planície Amazônica. Seu ponto culminante, o Monte Roraima, empresta-lhe o nome. Etimologicamente resultado de contração de roro (verde) e imã (serra ou monte), foi batizado por indígenas pemons da Venezuela.</p>
+        <img src="{% static 'images/roraima.jpg' %}" />
+        <hr />
+        <div class="sub-title-content">2. Amazonas</div>
+        <p>Amazonas é uma das 27 unidades federativas do Brasil. Está situado na Região Norte, sendo o maior estado do país em extensão territorial, com uma área de 1 559 167,878 km², constituindo-se na nona maior subdivisão mundial, sendo maior que as áreas da França, Espanha, Suécia e Grécia somadas. Seria o décimo sexto maior país do mundo em área territorial, pouco superior à Mongólia. É maior que a região Nordeste, e maior que as regiões Sul e Sudeste juntas, e equivale a 2,25 vezes a área do estado norte-americano do Texas. A área média de seus 62 municípios é de 25 335 km², superior à área do estado brasileiro de Sergipe. O maior de seus municípios em extensão territorial é Barcelos, com 122 476 km² e o menor é Iranduba, com 2 215 km². Localiza-se no território amazonense o Pico da Neblina, ponto mais alto do Brasil, com 2 995 metros de altitude. Sua capital é o município de Manaus e seu atual governador é Wilson Lima.
+
+          Com mais de 4,2 milhões de habitantes ou cerca de 2% da população brasileira, é o segundo estado mais populoso da Região Norte e o décimo terceiro mais populoso do Brasil. As cidades mais populosas são: Manaus, com 2,2 milhões de habitantes em 2021, Parintins, com 116 439, Itacoatiara com 104 046, Manacapuru com 99 613 e Coari com 86 713 habitantes. O estado é ainda, subdividido em 4 regiões geográficas intermediárias e 11 regiões geográficas imediatas. Seus limites são com o estado do Pará ao leste; Mato Grosso ao sudeste; Rondônia e Acre ao sul e sudoeste; Roraima ao norte; além da Venezuela, Colômbia e Peru ao norte, noroeste e oeste, respectivamente. A Região Metropolitana de Manaus, com população superior aos 2,7 milhões de habitantes, é sua única região metropolitana. O estado possui um dos mais baixos índices de densidade demográfica no país, superior apenas ao do estado vizinho, Roraima. Conforme dados do Instituto Brasileiro de Geografia e Estatística, em 2019 a densidade demográfica equivale a 2,63 habitantes por quilômetro quadrado. O Amazonas possui o quarto maior Índice de Desenvolvimento Humano (IDH) e o 3.º maior PIB per capita entre todos os estados da região Norte do Brasil.
+
+          O "descobrimento" da região hoje formada pelos atuais estados do Amazonas e Pará foi de responsabilidade do espanhol Francisco de Orelhana. A viagem foi descrita apontando as belezas e possíveis riquezas do local, com os fatos e atos mais prováveis de chamar a atenção da coroa espanhola. Durante essa expedição (ocorrida à época 1541-1542), os espanhóis teriam encontrado as mulheres amazonas guerreiras, chamadas de Icamiabas, sobre as quais há muita fantasia e mitos. Em 1755 foi criada a então Capitania de São José do Rio Negro (subordinada ao então Estado do Grão-Pará e Maranhão). Em 1850, no dia 5 de setembro, foi criada a Província do Amazonas, desmembrada da Província do Grão-Pará. Os motivos que levaram à criação da Província do Amazonas foram muitos, em especial, a grandíssima área territorial administrada pelo Grão-Pará, com capital em Belém, e as tentativas fracassadas do Peru em ampliar suas fronteiras com o Brasil, com o apoio dos Estados Unidos.
+
+          O território do Amazonas é coberto em sua totalidade pela maior floresta tropical do mundo e conta com 98% de sua área preservada. Aliando seu potencial ecológico a uma política de negócios embasada na sustentabilidade, a capital amazonense tornou-se a sexta maior economia do Brasil em 2018. O Amazonas é o terceiro maior produtor de gás no país, por meio das operações da Petrobras no campo de Urucu, em Coari, conectado a Manaus por um gasoduto de 660 quilômetros cortando rios e floresta. A hidrografia do estado, entretanto, sofre grande influência de vários fatores como precipitação, vegetação e altitude. Em geral, os rios amazonenses são navegáveis e formam sua maior rede de transporte.</p>
+        <img src="{% static 'images/amazonas.jpg' %}" />
       </div>
     </body>
   </head>
